@@ -1,5 +1,5 @@
 import { INITIAL_USERS_STATE, usersReducer } from "./Hooks/userReducer";
-import {userReducer_ActionTypes} from "./Hooks/Types/userReducer_ActionTypes"
+import { userReducer_ActionTypes } from "./Hooks/Types/userReducer_ActionTypes";
 import { useReducer, useEffect } from "react";
 import axios from "axios";
 
@@ -11,9 +11,15 @@ const Users = () => {
       let response = await axios.get(
         `https://jsonplaceholder.typicode.com/users/`
       );
-      dispatch({ type: userReducer_ActionTypes.FUFILLED, payload: response.data });
+      dispatch({
+        type: userReducer_ActionTypes.FUFILLED,
+        payload: response.data,
+      });
     } catch (err) {
-      dispatch({ type: userReducer_ActionTypes.REJECTED, payload: err.message });
+      dispatch({
+        type: userReducer_ActionTypes.REJECTED,
+        payload: err.message,
+      });
     }
   };
 
