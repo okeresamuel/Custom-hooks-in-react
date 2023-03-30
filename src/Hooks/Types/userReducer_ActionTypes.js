@@ -1,5 +1,0 @@
-export const userReducer_ActionTypes = {
-  PENDING :  "FETCH_POST_PENDING",
-  FUFILLED : "FETCH_POST_FUFILLED",
-  REJECTED : "FETCH_POST_REJECTED"
-}

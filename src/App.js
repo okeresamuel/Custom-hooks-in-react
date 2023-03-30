@@ -1,8 +1,12 @@
-import Users from './Users';
+import Home from './Home';
+import Profilepage from './Profilepage';
 
 function App() {
   return (
-    <Users />
+    <>
+    <Home />
+    <Profilepage />
+    </>
   );
 }
 
