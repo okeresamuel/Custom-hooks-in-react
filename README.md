@@ -5,3 +5,5 @@
 
 ### The useRef hook do not trigger a re-render and  can be used instead of the useState hook to improve the applications performance. it`s also commonly used to refer and create events on html elements (Click events). 
 
+Read more : https://medium.com/@okeresamuel360/custom-hooks-in-react-8d6b1f2782eb
+
